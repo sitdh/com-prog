@@ -1,6 +1,6 @@
 first_number = int(input())
 
-if 0 == int(first_number):
+if 1 >= int(first_number):
     print('none')
     exit()
 
@@ -9,7 +9,7 @@ prime_count = ''
 while True:
 
     if 2 == first_number:
-        prime_count = '2'
+        prime_count += ' 2'
         break
 
     running_number = first_number

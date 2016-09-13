@@ -4,6 +4,9 @@ prime_count = 0
 
 while True:
 
+    if 1>= first_number:
+        break
+
     running_number = first_number
     divider = first_number // 2 if ( 0 == first_number % 2 ) else ( first_number // 2 ) + 1;
     count = 0

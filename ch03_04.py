@@ -1,4 +1,4 @@
-(day, month, year) = input().split()
+(day, month, year) = input().strip().split()
 
 day = int(day); month = int(month); year = int(year)
 
@@ -8,7 +8,8 @@ if month < 3:
 
 c = year / 100
 k = year % 100
-week_day = int( day + (26 * (month + 1) / 10) + k + ( k / 4 ) + ( c / 4 ) + ( 5 * c ) ) % 7
+
+day + 26 * (m + 1) / 10 + k + k/4
 
 week_day_name = ''
 
