@@ -7,12 +7,12 @@ for _ in range(number_of_data):
 
 # mean
 mean = sum(data) / number_of_data
-data = sorted(data)
 
 # median
+data = sorted(data)
 median = 0
 if 1 == len(data) % 2:
-    median = data[(len(data) // 2)]
+    median = data[len(data) // 2]
 else:
     median = (data[(len(data) // 2) - 1] + data[len(data) // 2]) / 2
 

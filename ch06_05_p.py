@@ -12,8 +12,6 @@ while not id_sorted:
     for i in range(0, len(student_ids) - 1):
         if int(student_ids[i+1]) > int(student_ids[i]):
             id_sorted = False
-            hold = student_ids[i]
-            student_ids[i] = student_ids[i+1] 
-            student_ids[i+1] = hold
+            student_ids[i], student_ids[i+1] = student_ids[i+1], student_ids[i] 
 
 print("\n".join(student_ids))
